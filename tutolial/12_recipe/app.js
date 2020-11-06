@@ -20,7 +20,7 @@ function paintRecipe(items) {
           <a href="${item.recipe.url}" target="_blank" class="btn">View Recipe</a>
         </div>
         <p class="food__extra">Caloris : ${item.recipe.calories.toFixed(2)}</p>
-        <p class="food__extra">Diet Labels : ${item.recipe.dietLabels}</p>
+        <p class="food__extra">Diet Labels : ${item.recipe.dietLabels.length > 0 ? item.recipe.dietLabels : 'No data'}</p>
         <p class="food__extra">Health Labels : ${item.recipe.healthLabels}</p>
       </div>
     </div>
